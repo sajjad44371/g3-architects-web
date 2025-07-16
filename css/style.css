@@ -1,10 +1,101 @@
 /* fonts links */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* common styles start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #FF900E;
+    --heading-color: #131313;
+    --text-color: #727272;
+    --nav-color: #424242;
+}
 body {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-size: 1rem;
+  color: var(--text-color);
   font-style: normal;
   line-height: 26px;
 }
+.section-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--heading-color);
+    margin-bottom: 24px;
+}
+.primary-btn{
+    font-size: 1.25rem;
+    font-weight: 600px;
+    padding: 20px 30px;
+    color: white;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 8px;
+}
+/* common styles start */
+
+/* header styles start */
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+nav{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h3{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--heading-color);
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.menu ul li{
+   list-style: none;
+}
+.menu ul li a{
+   text-decoration: none;
+   font-size: 1.125rem;
+   font-weight: 500;
+   color: var(--nav-color);
+}
+.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 0 50px;
+}
+.banner-content{
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-content h1{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 70px;
+    color: var(--heading-color);
+}
+.banner-content p{
+    padding: 35px 0 50px;
+}
+.banner-btn{
+    text-align: center;
+}
+.banner-image img{
+    width: 100%;
+}
+.banner-btn{
+    margin-bottom: 70px;
+}
+/* header styles end */
