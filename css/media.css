@@ -1,24 +1,86 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
+    /* btn */
+    .primary-btn{
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 15px 25px;
+    }
+
     /* header */
     nav, .banner{
         max-width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 0;
+    }
+    .logo h3{
+        font-size: 2.4rem;
+    }
+    .menu ul{
+        gap: 20px;
+    }
+    .banner{
+        padding: 40px 0 50px;
+    }
+    .banner-content h1{
+        font-size: 3.4rem;
+        line-height: 60px;
     }
  }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
+    /* btn */
+    .primary-btn{
+        font-size: 1.12rem;
+        font-weight: 500;
+        padding: 15px 25px;
+    }
+
     /* header */
     nav, .banner{
         max-width: 540px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 0;
+    }
+    .logo h3{
+        font-size: 2.4rem;
+    }
+    .banner{
+        padding: 50px 0;
+    }
+    .banner-content h1{
+        font-size: 3.6rem;
+        line-height: 60px;
     }
  }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
+    /* btn */
+    .primary-btn{
+        padding: 15px 25px;
+    }
+
     /* header */
     nav, .banner{
         max-width: 720px;
+    }
+    .logo h3{
+        font-size: 2.4rem;
+    }
+    .menu ul{
+        gap: 40px;
+    }
+    .banner-content h1{
+        font-size: 3.6rem;
+        line-height: 60px;
     }
  }
 

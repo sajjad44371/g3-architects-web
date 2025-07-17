@@ -30,7 +30,7 @@ body {
 }
 .primary-btn{
     font-size: 1.25rem;
-    font-weight: 600px;
+    font-weight: 600;
     padding: 20px 30px;
     color: white;
     background-color: var(--primary-color);
