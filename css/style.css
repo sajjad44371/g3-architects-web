@@ -27,6 +27,7 @@ body {
     font-weight: bold;
     color: var(--heading-color);
     margin-bottom: 24px;
+    line-height: 50px;
 }
 .primary-btn{
     font-size: 1.25rem;
@@ -36,6 +37,13 @@ body {
     background-color: var(--primary-color);
     text-decoration: none;
     border-radius: 8px;
+    transition: all 0.33s;
+}
+.primary-btn:hover{
+    box-shadow: 0px 4px 30px 0px var(--primary-color);
+}
+img{
+    width: 100%;
 }
 /* common styles start */
 
@@ -55,6 +63,7 @@ nav{
     font-size: 2.8rem;
     font-weight: bold;
     color: var(--heading-color);
+    cursor: pointer;
 }
 .menu ul{
     display: flex;
@@ -69,6 +78,10 @@ nav{
    font-size: 1.125rem;
    font-weight: 500;
    color: var(--nav-color);
+   transition: all.33s;
+}
+.menu ul li a:hover{
+    color: var(--primary-color);
 }
 .banner{
     max-width: 1440px;
@@ -92,10 +105,168 @@ nav{
 .banner-btn{
     text-align: center;
 }
-.banner-image img{
-    width: 100%;
-}
 .banner-btn{
     margin-bottom: 70px;
 }
 /* header styles end */
+
+/* teams styles start */
+.teams{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.team-container{
+    margin: 85px 0 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+.team-member{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.team-content{
+    max-width: 540px;
+}
+.title-1{
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--text-color);
+}
+.title-2{
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--heading-color);
+}
+.title-3{
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 60px;
+    color: var(--primary-color);
+}
+.team-content p{
+    margin: 25px 0 60px;
+}
+/* teams styles end */
+
+/* feature styles start */
+.feature{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.feature-content{
+    max-width: 590px;
+}
+.feature-content-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-item{
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-item-content{
+    padding: 30px;
+}
+.feature-item-content h4{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--heading-color);
+    margin-bottom: 10px;
+}
+.feature-image{
+    max-width: 880px;
+}
+
+/* feature styles end */
+
+/* facts styles start */
+.facts{
+    max-width: 1440px;
+    margin: 130px auto 180px;
+}
+.facts-text{
+    max-width: 540px;
+}
+.awards{
+    margin: 100px auto 0;
+    max-width: 1320px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.awards-item{
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .33s;
+}
+.awards-item:hover{
+    box-shadow: 0px 4px 30px 0px var(--primary-color);
+}
+.awards-item-content{
+    text-align: center;
+    width: 170px;
+    height: 136px;
+}
+.awards-item-content h3{
+    margin: 10px 0;
+}
+.awards-item-content img{
+    width: auto;
+}
+/* facts styles end */
+
+/* sponsor styles start */
+.sponsor{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-text{
+    max-width: 540px;
+    margin: 0 auto;
+}
+.sponsor-img{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    margin-top: 50px;
+}
+.sponsor-img img{
+    width: 70%;
+    filter: grayscale(100%);
+    transition: all .33s;
+}
+.sponsor-img img:hover{
+    filter: grayscale(0%);
+}
+/* sponsor styles end */
+
+/* footer styles */
+footer{
+    max-width: 1440px;
+    margin: 110px auto 120px;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h3{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 40px 0;
+}
